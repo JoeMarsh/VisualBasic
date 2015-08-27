@@ -54,7 +54,6 @@ Partial Class frmAddRecords
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
-        Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnFirst = New System.Windows.Forms.Button()
@@ -62,6 +61,7 @@ Partial Class frmAddRecords
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnLast = New System.Windows.Forms.Button()
         Me.txtCount = New System.Windows.Forms.TextBox()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         CarDistrictLabel = New System.Windows.Forms.Label()
         CarRegYearLabel = New System.Windows.Forms.Label()
         CarRegCodeLabel = New System.Windows.Forms.Label()
@@ -316,18 +316,9 @@ Partial Class frmAddRecords
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = True
         '
-        'btnSearch
-        '
-        Me.btnSearch.Location = New System.Drawing.Point(314, 126)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearch.TabIndex = 16
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = True
-        '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(314, 155)
+        Me.btnCancel.Location = New System.Drawing.Point(314, 126)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 17
@@ -388,11 +379,23 @@ Partial Class frmAddRecords
         Me.txtCount.TabIndex = 23
         Me.txtCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(51, 206)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(46, 17)
+        Me.RadioButton1.TabIndex = 24
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Test"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
         'frmAddRecords
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(422, 292)
+        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.txtCount)
         Me.Controls.Add(Me.btnLast)
         Me.Controls.Add(Me.btnNext)
@@ -400,7 +403,6 @@ Partial Class frmAddRecords
         Me.Controls.Add(Me.btnFirst)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnUpdate)
@@ -451,7 +453,6 @@ Partial Class frmAddRecords
     Friend WithEvents btnUpdate As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents btnDelete As System.Windows.Forms.Button
-    Friend WithEvents btnSearch As System.Windows.Forms.Button
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnFirst As System.Windows.Forms.Button
@@ -459,4 +460,5 @@ Partial Class frmAddRecords
     Friend WithEvents btnNext As System.Windows.Forms.Button
     Friend WithEvents btnLast As System.Windows.Forms.Button
     Friend WithEvents txtCount As System.Windows.Forms.TextBox
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
 End Class
