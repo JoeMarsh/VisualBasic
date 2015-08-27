@@ -1,4 +1,6 @@
-﻿Public Class frmAddRecords
+﻿Imports System.Text.RegularExpressions
+
+Public Class frmAddRecords
 
     Private Sub RecordsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles RecordsBindingNavigatorSaveItem.Click
         Me.Validate()
@@ -72,5 +74,25 @@
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
+    End Sub
+
+    Private Sub CarDistrictTextBox_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles CarDistrictTextBox.Validating
+        'If Not Regex.IsMatch(CarDistrictTextBox.Text, "^[a-zA-Z]+\s*$") Then
+        '    MessageBox.Show("Please enter letters only")
+        'End If
+        Dim bool As Boolean
+        bool = True
+        For i = 0 To CarDistrictTextBox.Text.Length - 1
+            If Not Char.IsLetter(CarDistrictTextBox.Text.Chars(i)) Then
+                bool = False
+            End If
+        Next
+
+        If bool Then
+
+        Else
+            MessageBox.Show("Please enter letters only")
+        End If
+
     End Sub
 End Class
