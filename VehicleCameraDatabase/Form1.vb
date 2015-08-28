@@ -52,4 +52,9 @@ Public Class frmSearch
         Dim frm As New frmAddRecords
         frm.Show()
     End Sub
+
+    Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTest.Click
+        Dim Form3 As New Form3
+        Form3.Show()
+    End Sub
 End Class

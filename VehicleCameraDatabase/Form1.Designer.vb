@@ -36,6 +36,7 @@ Partial Class frmSearch
         Me.txtNoRecords = New System.Windows.Forms.TextBox()
         Me.picCamera = New System.Windows.Forms.PictureBox()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnTest = New System.Windows.Forms.Button()
         CType(Me.dgvResults, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCamera, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -158,11 +159,21 @@ Partial Class frmSearch
         Me.btnAdd.Text = "Add Records"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'btnTest
+        '
+        Me.btnTest.Location = New System.Drawing.Point(353, 165)
+        Me.btnTest.Name = "btnTest"
+        Me.btnTest.Size = New System.Drawing.Size(110, 23)
+        Me.btnTest.TabIndex = 13
+        Me.btnTest.Text = "Testing DataSet"
+        Me.btnTest.UseVisualStyleBackColor = True
+        '
         'frmSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(713, 533)
+        Me.Controls.Add(Me.btnTest)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.picCamera)
         Me.Controls.Add(Me.txtNoRecords)
@@ -197,5 +208,6 @@ Partial Class frmSearch
     Friend WithEvents txtNoRecords As System.Windows.Forms.TextBox
     Friend WithEvents picCamera As System.Windows.Forms.PictureBox
     Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnTest As System.Windows.Forms.Button
 
 End Class
